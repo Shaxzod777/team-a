@@ -1,24 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/contacts.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacts — [Dealer Name]</title>
+<link rel="stylesheet" href="./css/contacts.css">
 </head>
 <body>
-    <div class="form-box">
-    <h2>Вход / Регистрация</h2>
-    <form id="myForm">
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="pass" placeholder="Пароль" required>
-      <input type="password" id="confirmPass" placeholder="Повторите пароль" required>
-      
-      <div id="msg" class="msg"></div>
-      
-      <button type="submit">Отправить</button>
-    </form>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="logo-mark">LOGO</div>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="model.html">Model</a>
+      <a href="configurator.html">Configurator</a>
+      <a href="contacts.html" class="active">Contacts</a>
+    </nav>
+    <a href="contacts.html" class="btn btn-outline btn-sm">Test drive</a>
   </div>
-    <script src="./js/contacts"></script>
+</header>
+
+<section class="tight">
+  <div class="wrap">
+    <p class="eyebrow">Contacts</p>
+    <h1>Come and drive it</h1>
+    <p class="lede">Showroom open [Opening Hours]. Leave your number and we call back the same day.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="contact-grid">
+
+    <div class="info-col">
+      <div>
+        <p class="info-label">Address</p>
+        <p class="info-value">[Street Address]<br>[City], [Country]</p>
+      </div>
+      <div>
+        <p class="info-label">Phone</p>
+        <p class="info-value">[Phone]</p>
+      </div>
+      <div>
+        <p class="info-label">Email</p>
+        <p class="info-value">[Email]</p>
+      </div>
+      <div>
+        <p class="info-label">Hours</p>
+        <p class="info-value">[Opening Hours]</p>
+      </div>
+    </div>
+
+    <div class="card form-card">
+      <h3>Book a test drive</h3>
+      <form id="driveForm">
+        <label class="field-label" for="nameInput">Name</label>
+        <input class="field-input" id="nameInput" name="name" type="text" placeholder="Your name" required>
+
+        <label class="field-label" for="phoneInput">Phone</label>
+        <input class="field-input" id="phoneInput" name="phone" type="tel" placeholder="+[Country code] ..." required>
+
+        <label class="field-label" for="msgInput">Message</label>
+        <textarea class="field-input" id="msgInput" name="message" rows="4" placeholder="Which model and when suits you?"></textarea>
+
+        <button type="submit" class="btn btn-solid btn-full">Send request</button>
+        <p id="formNote" class="form-note">Thanks — this is a practice layout, so nothing was actually sent.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="wrap map-wrap">
+  <div class="media map-media"><span>Yandex Maps</span></div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">MERCEDES-BENZ</div>
+        <div class="footer-addr">[Dealer Name], [Street Address], [City]</div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="model.html">Model</a>
+        </div>
+        <div class="footer-col">
+          <h4>Buy</h4>
+          <a href="configurator.html">Configurator</a>
+          <a href="contacts.html">Test drive</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div>[Phone]</div>
+          <div>[Email]</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">© [Year] [Dealer Name]. Practice layout — not an official site.</div>
+  </div>
+</footer>
+
+<script src="./js/contacts.js"></script>
 </body>
 </html>
