@@ -1,18 +1,425 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Автомобильный Конфигуратор</title>
-  
-  <!-- Подключение CSS -->
-  <link rel="stylesheet" href="./css/configurator.css">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mercedes-Benz — Configurator</title>
+
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0qBZBp1Pb46J7p6FVdxgf9jtgiEcaFW9gLx5gU-bNA&s=10л">
+    <link
+        rel="stylesheet"
+        href="css/configurator.css"
+    >
 </head>
+
 <body>
 
-  <!-- Ваш HTML-код конфигуратора -->
+<header class="header">
 
-  <!-- Подключение JavaScript (желательно перед закрывающим тегом </body>) -->
-  <script src="./js/script.js"></script>
+    <a href="index.html" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0qBZBp1Pb46J7p6FVdxgf9jtgiEcaFW9gLx5gU-bNA&s=10л" alt="logo" class="Mercedes_logo_nav">
+        <span>MERCEDES-BENZ</span>
+    </a>
+
+    <nav class="navigation">
+
+        <a href="index.html">HOME</a>
+        <a href="cars.html">MODEL</a>
+        <a href="configurator.html" class="active">CONFIGURATOR</a>
+        <a href="contacts.html">CONTACTS</a>
+
+    </nav>
+
+    <button class="test-drive-button" id="openTestDrive">
+        TEST DRIVE
+    </button>
+
+</header>
+
+
+<main class="configurator">
+
+    <section class="top">
+
+        <div>
+
+            <span class="eyebrow">
+                STEP 1 OF 3
+            </span>
+
+            <h1>
+                BUILD YOUR<br>
+                <span id="titleModel">A-CLASS</span>
+            </h1>
+
+        </div>
+
+        <p class="top-description">
+            Create your own specification.
+            Choose a model, exterior, wheels
+            and interior.
+        </p>
+
+    </section>
+
+
+    <section class="category-section">
+
+        <div class="section-heading">
+
+            <span>01</span>
+
+            <h2>
+                SELECT MODEL
+            </h2>
+
+        </div>
+
+
+        <div
+            class="category-list"
+            id="categoryList"
+        ></div>
+
+
+        <div
+            class="car-list"
+            id="carList"
+        ></div>
+
+    </section>
+
+
+    <section class="builder">
+
+        <div class="car-preview">
+
+            <div class="preview-top">
+
+                <span id="previewCategory">
+                    A-CLASS
+                </span>
+
+                <span id="previewYear">
+                    2023
+                </span>
+
+            </div>
+
+
+            <div class="image-wrapper">
+
+                <div class="image-loader"></div>
+
+                <img
+                    id="carImage"
+                    src=""
+                    alt="Mercedes-Benz"
+                >
+
+            </div>
+
+
+            <div class="preview-info">
+
+                <div>
+
+                    <span class="small-label">
+                        YOUR CONFIGURATION
+                    </span>
+
+                    <h2 id="previewName">
+                        Mercedes-Benz A-Class
+                    </h2>
+
+                </div>
+
+                <div class="price">
+                    $<span id="totalPrice">95,000</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <aside class="options">
+
+            <div class="option-section">
+
+                <div class="option-header">
+
+                    <div>
+                        <span>01</span>
+                        <h3>PAINT</h3>
+                    </div>
+
+                    <span
+                        id="selectedColorName"
+                        class="selected-value"
+                    >
+                        Obsidian Black
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="color-options"
+                    id="colorOptions"
+                ></div>
+
+            </div>
+
+
+            <div class="option-section">
+
+                <div class="option-header">
+
+                    <div>
+                        <span>02</span>
+                        <h3>WHEELS</h3>
+                    </div>
+
+                    <span
+                        id="selectedWheelName"
+                        class="selected-value"
+                    >
+                        19" Five-Spoke
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="wheel-options"
+                    id="wheelOptions"
+                ></div>
+
+            </div>
+
+
+            <div class="option-section">
+
+                <div class="option-header">
+
+                    <div>
+                        <span>03</span>
+                        <h3>INTERIOR</h3>
+                    </div>
+
+                    <span
+                        id="selectedInteriorName"
+                        class="selected-value"
+                    >
+                        Black Leather
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="interior-options"
+                    id="interiorOptions"
+                ></div>
+
+            </div>
+
+
+            <div class="summary">
+
+                <div class="summary-line">
+                    <span>MODEL</span>
+                    <span id="summaryModel">
+                        A-Class
+                    </span>
+                </div>
+
+                <div class="summary-line">
+                    <span>PAINT</span>
+                    <span id="summaryColor">
+                        Obsidian Black
+                    </span>
+                </div>
+
+                <div class="summary-line">
+                    <span>WHEELS</span>
+                    <span id="summaryWheel">
+                        19" Five-Spoke
+                    </span>
+                </div>
+
+                <div class="summary-line">
+                    <span>INTERIOR</span>
+                    <span id="summaryInterior">
+                        Black Leather
+                    </span>
+                </div>
+
+                <div class="summary-total">
+
+                    <span>TOTAL</span>
+
+                    <strong>
+                        $<span id="summaryPrice">
+                            95,000
+                        </span>
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="request-button"
+                id="requestButton"
+            >
+
+                <span>
+                    REQUEST THIS BUILD
+                </span>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </button>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+<div
+    class="notification"
+    id="notification"
+>
+    <div class="notification-line"></div>
+
+    <span>
+        Configuration saved
+    </span>
+</div>
+
+
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+            <div class="footer-title">MERCEDES-BENZ</div>
+            <div class="footer-address">[DEALER NAME], [STREET ADDRESS], [CITY]</div>
+        </div>
+
+        <div class="footer-columns">
+
+            <div class="footer-column">
+                <span class="footer-heading">PAGES</span>
+                <a href="index.html">Home</a>
+                <a href="cars.html">Model</a>
+            </div>
+
+            <div class="footer-column">
+                <span class="footer-heading">BUY</span>
+                <a href="configurator.html">Configurator</a>
+                <a href="#" class="footer-test-drive">Test drive</a>
+            </div>
+
+            <div class="footer-column">
+                <span class="footer-heading">CONTACT</span>
+                <a href="tel:+00000000000">[PHONE]</a>
+                <a href="mailto:email@example.com">[EMAIL]</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © [YEAR] [DEALER NAME]. Practice layout — not an official site.
+    </div>
+
+</footer>
+
+
+<div class="test-drive-overlay" id="testDriveModal" aria-hidden="true">
+
+    <div class="test-drive-modal" role="dialog" aria-modal="true" aria-labelledby="testDriveTitle">
+
+        <button class="test-drive-close" id="closeTestDrive" aria-label="Close">
+            ×
+        </button>
+
+        <span class="modal-eyebrow">MEET YOUR NEXT DRIVE</span>
+
+        <h2 id="testDriveTitle">BOOK A TEST DRIVE</h2>
+
+        <p class="modal-description">
+            Choose a model and your preferred day.
+        </p>
+
+        <div class="demo-note">
+            Demo form — your details are not sent, and no appointment is booked.
+        </div>
+
+        <form id="testDriveForm">
+
+            <label>
+                <span>Full name</span>
+                <input type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <div class="modal-row">
+
+                <label>
+                    <span>Model</span>
+                    <select name="model">
+                        <option>Sedan</option>
+                        <option>A-Class</option>
+                        <option>C-Class</option>
+                        <option>E-Class</option>
+                        <option>S-Class</option>
+                        <option>GLE</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Preferred date</span>
+                    <input type="date" name="date" required>
+                </label>
+
+            </div>
+
+            <button type="submit" class="review-button">
+                REVIEW REQUEST
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="js/conf_data.js"></script>
+<script src="js/configurator.js"></script>
+<script src="js/conf_main.js"></script>
+
 </body>
+
 </html>
