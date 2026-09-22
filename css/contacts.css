@@ -224,3 +224,18 @@ section.tight{ padding: 64px 0; }
   .footer-cols{ gap: 36px; }
   .primary-nav{ display: none; }
 }
+
+
+
+.map-embed{
+  height: 280px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.map-embed iframe{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
