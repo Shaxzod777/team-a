@@ -3,10 +3,537 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Mercedes-Benz</title>
+
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0qBZBp1Pb46J7p6FVdxgf9jtgiEcaFW9gLx5gU-bNA&s=10л">
+
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <script src="./js/index.js"></script>
+
+<header class="site-header">
+
+    <a href="index.html" class="logo">
+        <!-- Если в configurator.html у тебя другой путь к логотипу,
+             поставь здесь ТОТ ЖЕ самый путь -->
+       <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0qBZBp1Pb46J7p6FVdxgf9jtgiEcaFW9gLx5gU-bNA&s=10л"
+        alt="logo" 
+        class="Mercedes_logo_nav">
+        <span>MERCEDES-BENZ</span>
+    </a>
+
+    <nav class="navigation">
+        <a href="index.html" class="active">HOME</a>
+        <a href="cars.html">MODEL</a>
+        <a href="configurator.html">CONFIGURATOR</a>
+        <a href="contacts.html">CONTACTS</a>
+    </nav>
+
+    <button class="test-drive-button" id="openTestDrive">
+        TEST DRIVE
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero reveal">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                NEW ARRIVALS · 2026
+            </span>
+
+            <h1>
+                THE SEDAN THAT SETS THE STANDARD
+            </h1>
+
+            <p>
+                Explore the current line-up, build your own specification
+                and book a test drive.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="configurator.html" class="primary-button">
+                    BUILD YOUR OWN
+                </a>
+
+                <a href="cars.html" class="secondary-button">
+                    VIEW THE MODELS
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image image-reveal">
+
+            <img
+                src="public/photos/A class/250e_black.jpg"
+                alt="Mercedes-Benz A 250 e"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- THREE WAYS -->
+    <section class="drive-section">
+
+        <div class="section-heading reveal">
+
+            <span class="eyebrow">
+                THE LINE-UP
+            </span>
+
+            <h2>
+                THREE WAYS TO DRIVE
+            </h2>
+
+        </div>
+
+
+        <div class="drive-grid">
+
+
+            <a href="cars.html" class="drive-card reveal">
+
+                <div class="drive-image">
+                    <img
+                        src="public/photos/A class/250e_black.jpg"
+                        alt="Sedan"
+                    >
+                </div>
+
+                <div class="drive-info">
+
+                    <span class="drive-type">
+                        SEDAN
+                    </span>
+
+                    <span>
+                        From [PRICE]
+                    </span>
+
+                    <span>
+                        VIEW MODEL ↗
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <a href="cars.html" class="drive-card reveal">
+
+                <div class="drive-image">
+                    <img
+                        src="public/photos/EQA/eqa_blue.jpg"
+                        alt="SUV"
+                    >
+                </div>
+
+                <div class="drive-info">
+
+                    <span class="drive-type">
+                        SUV
+                    </span>
+
+                    <span>
+                        From [PRICE]
+                    </span>
+
+                    <span>
+                        VIEW MODEL ↗
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <a href="cars.html" class="drive-card reveal">
+
+                <div class="drive-image">
+                    <img
+                        src="public/photos/EQC/eqc_black.jpg"
+                        alt="Coupe"
+                    >
+                </div>
+
+                <div class="drive-info">
+
+                    <span class="drive-type">
+                        COUPÉ
+                    </span>
+
+                    <span>
+                        From [PRICE]
+                    </span>
+
+                    <span>
+                        VIEW MODEL ↗
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- LOCATION -->
+    <section class="location-section reveal">
+
+        <div class="showroom-map">
+            <iframe
+                src="https://www.google.com/maps?q=Mercedes-Benz+Stuttgart,+Mercedesstraße+120,+70372+Stuttgart,+Germany&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+
+        <div class="location-content">
+
+            <span class="eyebrow">
+                02 · SHOWROOM
+            </span>
+
+            <h2>
+                VISIT US IN [CITY]
+            </h2>
+
+            <p>
+                Every car on the floor is prepared by factory-trained
+                technicians. Come and see it, or reserve a test drive
+                for the weekend.
+            </p>
+
+
+            <div class="location-details">
+
+                <div>
+                    <span>01</span>
+                    Factory-trained service
+                </div>
+
+                <div>
+                    <span>02</span>
+                    Warranty on every certified car
+                </div>
+
+                <div>
+                    <span>03</span>
+                    Trade-in evaluation
+                </div>
+
+            </div>
+
+
+            <div class="location-address">
+
+                <strong>
+                    MERCEDES-BENZ STUTTGART
+                </strong>
+
+                <span>
+                    Mercedesstraße 120
+                </span>
+
+                <span>
+                    70372 Stuttgart, Germany
+                </span>
+
+            </div>
+
+
+            <button
+                class="outline-button"
+                id="locationTestDrive"
+            >
+                BOOK A TEST DRIVE
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINAL BRAND BLOCK -->
+    <section class="brand-statement reveal">
+ 
+        <span class="brand-name">
+            MERCEDES-BENZ
+        </span>
+
+        <p>
+            Where every journey begins with something worth remembering.
+        </p>
+
+    </section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <div class="footer-title">
+                MERCEDES-BENZ
+            </div>
+
+            <div class="footer-address">
+                Mercedesstraße 120, 70372 Stuttgart
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-columns">
+
+
+            <div class="footer-column">
+
+                <span class="footer-heading">
+                    PAGES
+                </span>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="cars.html">
+                    Model
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <span class="footer-heading">
+                    BUY
+                </span>
+
+                <a href="configurator.html">
+                    Configurator
+                </a>
+
+                <a href="#" class="footer-test-drive">
+                    Test drive
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <span class="footer-heading">
+                    CONTACT
+                </span>
+
+                <a href="tel:+49711170">
+                    [PHONE]
+                </a>
+
+                <a href="mailto:dialog.mb@mercedes-benz.com">
+                    [EMAIL]
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Mercedes-Benz · Practice layout — not an official site.
+
+    </div>
+
+</footer>
+
+
+
+<!-- TEST DRIVE MODAL -->
+
+<div
+    class="test-drive-overlay"
+    id="testDriveModal"
+    aria-hidden="true"
+>
+
+    <div class="test-drive-modal">
+
+        <button
+            class="test-drive-close"
+            id="closeTestDrive"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <span class="modal-eyebrow">
+            MEET YOUR NEXT DRIVE
+        </span>
+
+
+        <h2>
+            BOOK A TEST DRIVE
+        </h2>
+
+
+        <p class="modal-description">
+            Choose a model and your preferred day.
+        </p>
+
+
+        <div class="demo-note">
+
+            Demo form — your details are not sent,
+            and no appointment is booked.
+
+        </div>
+
+
+        <form id="testDriveForm">
+
+
+            <label>
+
+                <span>
+                    Full name
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Your name"
+                    required
+                >
+
+            </label>
+
+
+
+            <label>
+
+                <span>
+                    Email
+                </span>
+
+                <input
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </label>
+
+
+
+            <div class="modal-row">
+
+
+                <label>
+
+                    <span>
+                        Model
+                    </span>
+
+                    <select>
+
+                        <option>
+                            A 250 e
+                        </option>
+
+                        <option>
+                            C-Class
+                        </option>
+
+                        <option>
+                            EQA
+                        </option>
+
+                        <option>
+                            EQC
+                        </option>
+
+                        <option>
+                            EQS
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+
+                <label>
+
+                    <span>
+                        Preferred date
+                    </span>
+
+                    <input
+                        type="date"
+                        required
+                    >
+
+                </label>
+
+
+            </div>
+
+
+            <button
+                class="review-button"
+                type="submit"
+            >
+                REVIEW REQUEST
+            </button>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<script src="js/index.js"></script>
+
 </body>
 </html>
