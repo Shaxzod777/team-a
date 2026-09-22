@@ -3,10 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/cars.css">
+    <title>Mercedes-Benz — Models</title>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0qBZBp1Pb46J7p6FVdxgf9jtgiEcaFW9gLx5gU-bNA&s=10л">
+    <link rel="stylesheet" href="css/cars.css">
 </head>
 <body>
-    <script src="./cars.js"></script>
+
+<header class="site-header">
+    <a href="index.html" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0qBZBp1Pb46J7p6FVdxgf9jtgiEcaFW9gLx5gU-bNA&s=10л" alt="logo" class="Mercedes_logo_nav">
+        <span>MERCEDES-BENZ</span>
+    </a>
+
+    <nav class="navigation">
+        <a href="index.html">HOME</a>
+        <a href="cars.html" class="active">MODEL</a>
+        <a href="configurator.html">CONFIGURATOR</a>
+        <a href="contacts.html">CONTACTS</a>
+    </nav>
+
+    <button class="test-drive-button" id="openTestDrive">TEST DRIVE</button>
+</header>
+
+<main>
+
+    <section class="hero reveal">
+        <div class="hero-copy">
+            <span class="eyebrow">MODELS / A-CLASS</span>
+            <h1>A 250 e</h1>
+            <p>Plug-in hybrid. Refined performance. Designed for everyday driving.</p>
+            <a class="primary-button" href="configurator.html">CONFIGURE THIS CAR</a>
+        </div>
+
+        <div class="hero-image image-reveal">
+            <img src="public/photos/A class/250e_black.jpg" alt="Mercedes A 250 e">
+        </div>
+    </section>
+
+    <section class="models-section">
+        <div class="section-heading reveal">
+            <span class="eyebrow">EXPLORE THE RANGE</span>
+            <h2>CHOOSE YOUR MODEL</h2>
+        </div>
+
+        <div class="model-grid">
+
+
+
+            <a class="model-card reveal" href="configurator.html">
+                <div class="model-image">
+                    <img class="model-img active" src="public/photos/C-class/cla_black.jpg" alt="C-Class">
+                    <img class="model-img" src="public/photos/C-class/cla_red.jpg" alt="" aria-hidden="true">
+                    <img class="model-img" src="public/photos/C-class/cla_white.jpg" alt="" aria-hidden="true">
+                </div>
+                <div class="card-info">
+                    <div>
+                        <span class="card-category">C-CLASS</span>
+                        <h3>C-Class</h3>
+                    </div>
+                    <span class="arrow">↗</span>
+                </div>
+            </a>
+
+            <a class="model-card reveal" href="configurator.html">
+                <div class="model-image">
+                    <img class="model-img active" src="public/photos/EQA/eqa_black.jpg" alt="EQA">
+                    <img class="model-img" src="public/photos/EQA/eqa_blue.jpg" alt="" aria-hidden="true">
+                    <img class="model-img" src="public/photos/EQA/eqa_white.jpg" alt="" aria-hidden="true">
+                </div>
+                <div class="card-info">
+                    <div>
+                        <span class="card-category">EQA</span>
+                        <h3>EQA</h3>
+                    </div>
+                    <span class="arrow">↗</span>
+                </div>
+            </a>
+
+            <a class="model-card reveal" href="configurator.html">
+                <div class="model-image">
+                    <img class="model-img active" src="public/photos/EQC/eqc_black.jpg" alt="EQC">
+                    <img class="model-img" src="public/photos/EQC/eqc_gray.jpg" alt="" aria-hidden="true">
+                </div>
+                <div class="card-info">
+                    <div>
+                        <span class="card-category">EQC</span>
+                        <h3>EQC</h3>
+                    </div>
+                    <span class="arrow">↗</span>
+                </div>
+            </a>
+
+            <a class="model-card reveal" href="configurator.html">
+                <div class="model-image">
+                    <img class="model-img active" src="public/photos/EQS/eqs_black.jpg" alt="EQS">
+                    <img class="model-img" src="public/photos/EQS/eqs_gray.jpg" alt="" aria-hidden="true">
+                </div>
+                <div class="card-info">
+                    <div>
+                        <span class="card-category">EQS</span>
+                        <h3>EQS</h3>
+                    </div>
+                    <span class="arrow">↗</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <div>
+            <div class="footer-title">MERCEDES-BENZ</div>
+            <div class="footer-address">[DEALER NAME], [STREET ADDRESS], [CITY]</div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="footer-column">
+                <span class="footer-heading">PAGES</span>
+                <a href="index.html">Home</a>
+                <a href="cars.html">Model</a>
+            </div>
+            <div class="footer-column">
+                <span class="footer-heading">BUY</span>
+                <a href="configurator.html">Configurator</a>
+                <a href="#" class="footer-test-drive">Test drive</a>
+            </div>
+            <div class="footer-column">
+                <span class="footer-heading">CONTACT</span>
+                <a href="tel:+00000000000">[PHONE]</a>
+                <a href="mailto:email@example.com">[EMAIL]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © [YEAR] [DEALER NAME]. Practice layout — not an official site.
+    </div>
+</footer>
+
+<div class="test-drive-overlay" id="testDriveModal" aria-hidden="true">
+    <div class="test-drive-modal">
+        <button class="test-drive-close" id="closeTestDrive" aria-label="Close">×</button>
+        <span class="modal-eyebrow">MEET YOUR NEXT DRIVE</span>
+        <h2>BOOK A TEST DRIVE</h2>
+        <p class="modal-description">Choose a model and your preferred day.</p>
+        <div class="demo-note">Demo form — your details are not sent, and no appointment is booked.</div>
+
+        <form id="testDriveForm">
+            <label><span>Full name</span><input type="text" placeholder="Your name" required></label>
+            <label><span>Email</span><input type="email" placeholder="you@example.com" required></label>
+
+            <div class="modal-row">
+                <label>
+                    <span>Model</span>
+                    <select>
+                        <option>A 250 e</option>
+                        <option>C-Class</option>
+                        <option>EQA</option>
+                        <option>EQC</option>
+                        <option>EQS</option>
+                    </select>
+                </label>
+                <label><span>Preferred date</span><input type="date" required></label>
+            </div>
+
+            <button class="review-button" type="submit">REVIEW REQUEST</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/cars.js"></script>
 </body>
 </html>
